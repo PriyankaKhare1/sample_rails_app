@@ -55,6 +55,15 @@ module SessionsHelper
     session.delete(:forwarding_url)
   end
 
+  # Returns the current theme preference.
+  def current_theme
+    if logged_in?
+      current_user.theme || "light"
+    else
+      cookies[:theme] || "light"
+    end
+  end
+
   # Stores the URL trying to be accessed.
   def store_location
     session[:forwarding_url] = request.original_url if request.get?

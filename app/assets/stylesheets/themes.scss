@@ -1,0 +1,189 @@
+/* Dark theme overrides */
+body[data-theme="dark"] {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+
+  /* Navbar */
+  .navbar-inverse {
+    background-color: #0f0f1a;
+    border-color: #2a2a4a;
+  }
+
+  /* Container & content areas */
+  .container {
+    color: #e0e0e0;
+  }
+
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    color: #e0e0e0;
+  }
+
+  h2 {
+    color: #a0a0b0;
+  }
+
+  a {
+    color: #6cb4ee;
+    &:hover {
+      color: #8ecaff;
+    }
+  }
+
+  /* Footer */
+  footer {
+    border-top-color: #2a2a4a;
+    color: #a0a0b0;
+    a {
+      color: #8090a0;
+      &:hover {
+        color: #c0d0e0;
+      }
+    }
+  }
+
+  /* Forms */
+  input, textarea, select, .uneditable-input {
+    background-color: #2a2a3e;
+    border-color: #4a4a6a;
+    color: #e0e0e0;
+  }
+
+  .form-control {
+    background-color: #2a2a3e;
+    border-color: #4a4a6a;
+    color: #e0e0e0;
+
+    &:focus {
+      border-color: #6cb4ee;
+    }
+  }
+
+  /* Alerts */
+  .alert-success {
+    background-color: #1a3a2a;
+    border-color: #2a5a3a;
+    color: #80d0a0;
+  }
+
+  .alert-danger {
+    background-color: #3a1a1a;
+    border-color: #5a2a2a;
+    color: #e09090;
+  }
+
+  .alert-info {
+    background-color: #1a2a3a;
+    border-color: #2a4a5a;
+    color: #80b0d0;
+  }
+
+  /* Users list */
+  .users li {
+    border-bottom-color: #2a2a4a;
+  }
+
+  /* Microposts */
+  .microposts li {
+    border-top-color: #2a2a4a;
+  }
+
+  .microposts .timestamp {
+    color: #8090a0;
+  }
+
+  /* Stats */
+  .stats a {
+    border-left-color: #3a3a5a;
+    color: #a0a0b0;
+    &:hover {
+      color: #6cb4ee;
+    }
+  }
+
+  /* Debug dump */
+  .debug_dump {
+    background-color: #2a2a3e;
+    color: #a0a0b0;
+  }
+
+  /* Error explanation */
+  #error_explanation {
+    color: #e09090;
+    ul {
+      color: #e09090;
+    }
+  }
+
+  /* Dropdown menus */
+  .dropdown-menu {
+    background-color: #1a1a2e;
+    border-color: #3a3a5a;
+    li > a {
+      color: #e0e0e0;
+      &:hover {
+        background-color: #2a2a4a;
+        color: #fff;
+      }
+    }
+    .divider {
+      background-color: #3a3a5a;
+    }
+  }
+
+  /* Sidebar */
+  aside section {
+    border-color: #2a2a4a;
+  }
+
+  /* Bio */
+  .bio {
+    color: #b0b0c0;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    background-color: #2a5a9a;
+    border-color: #1a4a8a;
+    &:hover {
+      background-color: #3a6aaa;
+    }
+  }
+
+  /* Well / panels */
+  .well {
+    background-color: #2a2a3e;
+    border-color: #3a3a5a;
+  }
+
+  /* Pagination */
+  .pagination > li > a,
+  .pagination > li > span {
+    background-color: #2a2a3e;
+    border-color: #3a3a5a;
+    color: #6cb4ee;
+  }
+
+  .pagination > .active > a,
+  .pagination > .active > span {
+    background-color: #2a5a9a;
+    border-color: #1a4a8a;
+  }
+}
+
+/* Theme toggle styling */
+#theme-toggle {
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  color: #ddd;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+#theme-icon {
+  font-style: normal;
+}

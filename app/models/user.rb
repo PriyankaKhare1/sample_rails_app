@@ -19,6 +19,7 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
   validates :bio, length: { maximum: 160 }
+  validates :theme, inclusion: { in: %w[light dark] }, allow_nil: true
 
   # Returns the hash digest of the given string.
   def User.digest(string)

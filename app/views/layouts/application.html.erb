@@ -12,7 +12,7 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= render 'layouts/shim' %>
   </head>
-  <body>
+  <body data-theme="<%= current_theme %>">
     <%= render 'layouts/header' %>
     <div class="container">
       <% flash.each do |message_type, message| %>

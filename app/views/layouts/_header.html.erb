@@ -17,6 +17,11 @@
           id="bs-example-navbar-collapse-1">
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Help", help_path %></li>
+        <li>
+          <a href="#" id="theme-toggle" title="Toggle dark/light mode">
+            <span id="theme-icon"><%= current_theme == "dark" ? "\u2600" : "\u263E" %></span>
+          </a>
+        </li>
         <% if logged_in? %>
           <li><%= link_to "Users", users_path %></li>
           <li class="dropdown">
