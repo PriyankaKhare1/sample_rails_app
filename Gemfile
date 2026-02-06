@@ -22,8 +22,9 @@ group :development, :test do
   # gem 'ruby-debug-ide'
   gem 'rspec-rails',        '5.1.2'
   gem 'simplecov',          '0.21.2'
-  gem 'sqlite3',            '1.4.2'
+  gem "sqlite3",            '~> 1.6'
   gem 'byebug',             '11.1.3', platforms: [:mri, :mingw, :x64_mingw]
+  gem "nio4r",              '>= 2.5.9'
 end
 group :development do
   gem 'web-console',        '4.1.0'
