@@ -19,4 +19,7 @@ Rails.application.routes.draw do
   resources :microposts,          only: [:create, :destroy]
   resources :relationships,       only: [:create, :destroy]
   put '/theme', to: 'themes#update'
+  namespace :admin do
+    get 'analytics', to: 'analytics#index'
+  end
 end
